@@ -41,7 +41,7 @@ watch(
             form.reset();
 
             if (props.task) {
-                form.setData({
+                Object.assign(form, {
                     title: props.task.title,
                     description: props.task.description,
                     priority: props.task.priority,

@@ -47,7 +47,11 @@ const deleteTask = () => {
                     Cancel
                 </SecondaryButton>
 
-                <DangerButton class="ms-3" :disabled="deleteForm.processing">
+                <DangerButton
+                    class="ms-3"
+                    :disabled="deleteForm.processing"
+                    @click="deleteTask"
+                >
                     {{ deleteForm.processing ? 'Deleting...' : 'Delete' }}
                 </DangerButton>
             </div>
