@@ -1,7 +1,5 @@
 <script setup>
-import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import NavLink from '@/Components/NavLink.vue';
-import { Link } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -11,13 +9,13 @@ import { Link } from '@inertiajs/vue3';
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="flex h-16 justify-between">
                         <div class="flex">
-                            <!-- Logo -->
+                            <!-- Brand -->
                             <div class="flex shrink-0 items-center">
-                                <Link :href="route('tasks.index')">
-                                    <ApplicationLogo
-                                        class="block h-9 w-auto fill-current text-gray-800"
-                                    />
-                                </Link>
+                                <span
+                                    class="inline-flex items-center gap-2 text-sm font-bold text-gray-800"
+                                >
+                                    TaskFlow
+                                </span>
                             </div>
 
                             <!-- Navigation Links -->
